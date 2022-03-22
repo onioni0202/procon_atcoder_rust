@@ -15,7 +15,7 @@ fn main() {
     for (i, &(a, b)) in ab.iter().enumerate() {
         graph[a].push(i);
         graph[b].push(i);
-        if ab[i].0 == i || ab[i].1 == i {
+        if a == i || b == i {
             q.push_back(i);
             seen[i] = true;
         }
