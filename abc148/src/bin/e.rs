@@ -16,7 +16,6 @@ fn main() {
         }
         1 => {
             println!("{}", 0);
-            return;
         }
         _ => unreachable!(),
     }
