@@ -1,0 +1,41 @@
+[package]
+name = "abc155"
+version = "0.1.0"
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+abc155-a = { alias = "a", problem = "https://atcoder.jp/contests/abc155/tasks/abc155_a" }
+abc155-b = { alias = "b", problem = "https://atcoder.jp/contests/abc155/tasks/abc155_b" }
+abc155-c = { alias = "c", problem = "https://atcoder.jp/contests/abc155/tasks/abc155_c" }
+abc155-d = { alias = "d", problem = "https://atcoder.jp/contests/abc155/tasks/abc155_d" }
+abc155-e = { alias = "e", problem = "https://atcoder.jp/contests/abc155/tasks/abc155_e" }
+abc155-f = { alias = "f", problem = "https://atcoder.jp/contests/abc155/tasks/abc155_f" }
+
+[[bin]]
+name = "abc155-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "abc155-b"
+path = "src/bin/b.rs"
+
+[[bin]]
+name = "abc155-c"
+path = "src/bin/c.rs"
+
+[[bin]]
+name = "abc155-d"
+path = "src/bin/d.rs"
+
+[[bin]]
+name = "abc155-e"
+path = "src/bin/e.rs"
+
+[[bin]]
+name = "abc155-f"
+path = "src/bin/f.rs"
+
+[dependencies]
+proconio = { version = "=0.3.6", features = ["derive"] }
+
+[dev-dependencies]
