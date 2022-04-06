@@ -7,7 +7,7 @@ fn main() {
         tx: [(usize, i64); q]
     }
     let n = 1 << 20;
-    let mut unused: BTreeSet<_> = (0..n).collect();
+    let mut unused: BTreeSet<_> = (0..1<<20).collect();
     let mut map = BTreeMap::new();
     for (t, x) in &tx {
         let h = x % n;
