@@ -16,11 +16,11 @@ fn main() {
     }
     let mut ans: i64 = 0;
     'outer: while let Some(Reverse((d, i, j))) = heap.pop() {
-        'inner: for k in 0..n {
+        let mut can_remove = false;
+        for k in 0..n {
             if seen[i][k] && seen[k][j] {
                 if d == a[i][k] + a[k][j] {
-                    ans -= d;
-                    break 'inner;
+                    can_remove = true;
                 } else if d > a[i][k] + a[k][j] {
                     ans = -1;
                     break 'outer;
@@ -29,7 +29,9 @@ fn main() {
         }
         seen[i][j] = true;
         seen[j][i] = true;
-        ans += d;
+        if !can_remove {
+            ans += d;
+        }
     }
     println!("{}", ans);
 }
