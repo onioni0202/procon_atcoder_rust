@@ -1,0 +1,52 @@
+[package]
+name = "abc222"
+version = "0.1.0"
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+abc222-a = { alias = "a", problem = "https://atcoder.jp/contests/abc222/tasks/abc222_a" }
+abc222-b = { alias = "b", problem = "https://atcoder.jp/contests/abc222/tasks/abc222_b" }
+abc222-c = { alias = "c", problem = "https://atcoder.jp/contests/abc222/tasks/abc222_c" }
+abc222-d = { alias = "d", problem = "https://atcoder.jp/contests/abc222/tasks/abc222_d" }
+abc222-e = { alias = "e", problem = "https://atcoder.jp/contests/abc222/tasks/abc222_e" }
+abc222-f = { alias = "f", problem = "https://atcoder.jp/contests/abc222/tasks/abc222_f" }
+abc222-g = { alias = "g", problem = "https://atcoder.jp/contests/abc222/tasks/abc222_g" }
+abc222-h = { alias = "h", problem = "https://atcoder.jp/contests/abc222/tasks/abc222_h" }
+
+[[bin]]
+name = "abc222-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "abc222-b"
+path = "src/bin/b.rs"
+
+[[bin]]
+name = "abc222-c"
+path = "src/bin/c.rs"
+
+[[bin]]
+name = "abc222-d"
+path = "src/bin/d.rs"
+
+[[bin]]
+name = "abc222-e"
+path = "src/bin/e.rs"
+
+[[bin]]
+name = "abc222-f"
+path = "src/bin/f.rs"
+
+[[bin]]
+name = "abc222-g"
+path = "src/bin/g.rs"
+
+[[bin]]
+name = "abc222-h"
+path = "src/bin/h.rs"
+
+[dependencies]
+proconio = { version = "=0.3.6", features = ["derive"] }
+itertools = "0.9.0"
+
+[dev-dependencies]

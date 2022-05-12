@@ -1,0 +1,51 @@
+[package]
+name = "abc250"
+version = "0.1.0"
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+abc250-a = { alias = "a", problem = "https://atcoder.jp/contests/abc250/tasks/abc250_a" }
+abc250-b = { alias = "b", problem = "https://atcoder.jp/contests/abc250/tasks/abc250_b" }
+abc250-c = { alias = "c", problem = "https://atcoder.jp/contests/abc250/tasks/abc250_c" }
+abc250-d = { alias = "d", problem = "https://atcoder.jp/contests/abc250/tasks/abc250_d" }
+abc250-e = { alias = "e", problem = "https://atcoder.jp/contests/abc250/tasks/abc250_e" }
+abc250-ex = { alias = "ex", problem = "https://atcoder.jp/contests/abc250/tasks/abc250_h" }
+abc250-f = { alias = "f", problem = "https://atcoder.jp/contests/abc250/tasks/abc250_f" }
+abc250-g = { alias = "g", problem = "https://atcoder.jp/contests/abc250/tasks/abc250_g" }
+
+[[bin]]
+name = "abc250-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "abc250-b"
+path = "src/bin/b.rs"
+
+[[bin]]
+name = "abc250-c"
+path = "src/bin/c.rs"
+
+[[bin]]
+name = "abc250-d"
+path = "src/bin/d.rs"
+
+[[bin]]
+name = "abc250-e"
+path = "src/bin/e.rs"
+
+[[bin]]
+name = "abc250-ex"
+path = "src/bin/ex.rs"
+
+[[bin]]
+name = "abc250-f"
+path = "src/bin/f.rs"
+
+[[bin]]
+name = "abc250-g"
+path = "src/bin/g.rs"
+
+[dependencies]
+proconio = { version = "=0.3.6", features = ["derive"] }
+
+[dev-dependencies]
