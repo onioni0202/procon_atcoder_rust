@@ -20,8 +20,6 @@ fn main() {
                 } else {
                     println!("{}", -1);
                 }
-                
-
             }
             3 => {
                 input! {x: i64, k: usize}
