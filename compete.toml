@@ -40,7 +40,7 @@ edition = "2018"
 #opt-level = 3
 #'''
 dependencies = '''
-proconio = { version = "=0.3.6", features = ["derive"] }
+proconio = { version = "0.3.6", features = ["derive"] }
 '''
 dev-dependencies = '''
 #atcoder-202004-lock = { git = "https://github.com/qryxip/atcoder-202004-lock" }
