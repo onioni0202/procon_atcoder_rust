@@ -1,0 +1,51 @@
+[package]
+name = "abc249"
+version = "0.1.0"
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+abc249-a = { alias = "a", problem = "https://atcoder.jp/contests/abc249/tasks/abc249_a" }
+abc249-b = { alias = "b", problem = "https://atcoder.jp/contests/abc249/tasks/abc249_b" }
+abc249-c = { alias = "c", problem = "https://atcoder.jp/contests/abc249/tasks/abc249_c" }
+abc249-d = { alias = "d", problem = "https://atcoder.jp/contests/abc249/tasks/abc249_d" }
+abc249-e = { alias = "e", problem = "https://atcoder.jp/contests/abc249/tasks/abc249_e" }
+abc249-ex = { alias = "ex", problem = "https://atcoder.jp/contests/abc249/tasks/abc249_h" }
+abc249-f = { alias = "f", problem = "https://atcoder.jp/contests/abc249/tasks/abc249_f" }
+abc249-g = { alias = "g", problem = "https://atcoder.jp/contests/abc249/tasks/abc249_g" }
+
+[[bin]]
+name = "abc249-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "abc249-b"
+path = "src/bin/b.rs"
+
+[[bin]]
+name = "abc249-c"
+path = "src/bin/c.rs"
+
+[[bin]]
+name = "abc249-d"
+path = "src/bin/d.rs"
+
+[[bin]]
+name = "abc249-e"
+path = "src/bin/e.rs"
+
+[[bin]]
+name = "abc249-ex"
+path = "src/bin/ex.rs"
+
+[[bin]]
+name = "abc249-f"
+path = "src/bin/f.rs"
+
+[[bin]]
+name = "abc249-g"
+path = "src/bin/g.rs"
+
+[dependencies]
+proconio = { version = "0.3.6", features = ["derive"] }
+
+[dev-dependencies]

@@ -1,0 +1,51 @@
+[package]
+name = "abc265"
+version = "0.1.0"
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+abc265-a = { alias = "a", problem = "https://atcoder.jp/contests/abc265/tasks/abc265_a" }
+abc265-b = { alias = "b", problem = "https://atcoder.jp/contests/abc265/tasks/abc265_b" }
+abc265-c = { alias = "c", problem = "https://atcoder.jp/contests/abc265/tasks/abc265_c" }
+abc265-d = { alias = "d", problem = "https://atcoder.jp/contests/abc265/tasks/abc265_d" }
+abc265-e = { alias = "e", problem = "https://atcoder.jp/contests/abc265/tasks/abc265_e" }
+abc265-ex = { alias = "ex", problem = "https://atcoder.jp/contests/abc265/tasks/abc265_h" }
+abc265-f = { alias = "f", problem = "https://atcoder.jp/contests/abc265/tasks/abc265_f" }
+abc265-g = { alias = "g", problem = "https://atcoder.jp/contests/abc265/tasks/abc265_g" }
+
+[[bin]]
+name = "abc265-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "abc265-b"
+path = "src/bin/b.rs"
+
+[[bin]]
+name = "abc265-c"
+path = "src/bin/c.rs"
+
+[[bin]]
+name = "abc265-d"
+path = "src/bin/d.rs"
+
+[[bin]]
+name = "abc265-e"
+path = "src/bin/e.rs"
+
+[[bin]]
+name = "abc265-ex"
+path = "src/bin/ex.rs"
+
+[[bin]]
+name = "abc265-f"
+path = "src/bin/f.rs"
+
+[[bin]]
+name = "abc265-g"
+path = "src/bin/g.rs"
+
+[dependencies]
+proconio = { version = "0.3.6", features = ["derive"] }
+
+[dev-dependencies]
